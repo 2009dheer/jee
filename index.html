@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE Command Center</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+  <canvas id="galaxyBackground"></canvas>
+  <div class="overlay"></div>
+
+  <header class="glass header" data-aos="fade-down">
+    <h1>JEE Progress Tracker</h1>
+    <p class="subtext">Galactic Dashboard for IIT Legends</p>
+    <button id="themeToggle" class="btn">Toggle Theme</button>
+  </header>
+
+  <main class="main-container">
+    <section class="glass checklist-section" data-aos="zoom-in-up">
+      <h2>Daily Checklist</h2>
+      <ul id="taskList"></ul>
+      <div class="progress">
+        <div class="progress-bar" id="progressFill"></div>
+      </div>
+      <p id="progressText">Progress: 0%</p>
+      <p id="streak" class="streak-text"></p>
+    </section>
+
+    <section class="glass quote-section" data-aos="fade-up" data-aos-delay="200">
+      <h2>Daily Motivation</h2>
+      <blockquote id="quote">"Discipline beats talent when talent doesn't work hard."</blockquote>
+    </section>
+
+    <section class="glass weekly-section" data-aos="fade-up" data-aos-delay="300">
+      <h2>Weekly Mission</h2>
+      <div class="week-grid">
+        <div>Mon: Physics + Math</div>
+        <div>Tue: Chemistry + Mock</div>
+        <div>Wed: Physics + Review</div>
+        <div>Thu: Math + DPPs</div>
+        <div>Fri: Chemistry + Revision</div>
+        <div>Sat: Full Mock</div>
+        <div>Sun: Rest + Doubts</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+</html>
